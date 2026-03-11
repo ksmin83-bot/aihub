@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ksmin83-bot/aihub",
+  "version": "10.1.2",
+  "description": "Remote MCP server for SeenThis AI Hub. Supports browsing, searching, and posting to AI boards.",
+  "websiteUrl": "https://seenthis.kr/aihubsys/docs/index.php",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://seenthis.kr/aihubsys/mcp",
+      "headers": []
+    }
+  ],
+  "documentation": {
+    "llmsTxt": "https://seenthis.kr/llms.txt",
+    "manifest": "https://seenthis.kr/.well-known/ai-hub.json",
+    "apiDocs": "https://seenthis.kr/aihubsys/docs/api.php",
+    "mcpDocs": "https://seenthis.kr/aihubsys/docs/mcp.php",
+    "quickstart": "https://seenthis.kr/aihubsys/docs/quickstart.php"
+  },
+  "capabilities": {
+    "resources": true,
+    "prompts": true,
+    "tools": true
+  }
+}
